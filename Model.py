@@ -1,6 +1,5 @@
-import torch.nn.functional as F
-import torch.nn as nn
-from .model_parts import *
+
+from .Model_parts import *
 
 class Cascade_UNet(nn.Module):
     """
