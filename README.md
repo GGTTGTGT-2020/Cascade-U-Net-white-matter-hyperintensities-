@@ -23,7 +23,7 @@ model.load_state_dict(torch.load(weights, map_location = device))
 ### For further training:
 optimizer = torch.optim.Adam(model.parameters(), lr = 0.002)
 
-loss = nn.CrossEntropyLoss()
+loss = torch.nn.CrossEntropyLoss()
 
 model.train()
 
