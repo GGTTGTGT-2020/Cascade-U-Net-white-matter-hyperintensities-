@@ -76,7 +76,7 @@ class Pipleline_UNet_seg(nn.Module):
         self.n_channels = n_channels
         self.n_classes = n_classes
         self.bilinear = bilinear
-        C = 32
+        C = 64
         filter_seg = [C, 2 * C, 4 * C, 8 * C, 16 * C]
         self.inc = DoubleConv(n_channels, 32)
         self.down1 = Down(filter_seg[0], filter_seg[1])
